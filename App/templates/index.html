@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap -->
+  <link href="../static/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="../static/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+  <title>Document</title>
+</head>
+<body>  
+    <header class="header_nav"> 
+      <nav class="row aling-content-center justify-content-between">
+
+        <div class="d-flex align-content-center justify-content-start col-3">
+          <h1 class="header_title__backtester">Backtester</h1>
+        </div>
+
+        <div class="header_statistic d-flex align-content-center justify-content-center col-3">
+          <div class="header_statistic__btn_part">
+            <h4 class="header_statistic__title text-center">
+              My Backtests: <span class="statistic_number_of__backtests">0</span>
+            </h4>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <section class="backtests_history_section">
+    <div class="backtests_history_table">
+      <div class="table_headings">
+        <div class="table_heading__column">
+          <div class="table_ellipse">
+          </div>
+        </div>
+        <div class="table_heading__column" id="strategy"><h4 class="strategy">STRATEGY</h4></div>
+        <div class="table_heading__column" id="roc"><h4 class="roc">ROC</h4></div>
+        <div class="table_heading__column" id="carg"><h4 class="carg">CARG</h4></div>
+        <div class="table_heading__column" id="max_drawdown"><h4 class="max_drawdown">MAX DRAWDOWN</h4></div>
+        <div class="table_heading__column" id="win_rate"><h4 class="win_rate">WIN RATE</h4></div>
+        <div class="table_heading__column" id="profit_factor"><h4 class="profit_factor">PROFIT FACTOR</h4></div>
+        <div class="table_heading__column" id="shape"><h4 class="shape">SHAPE</h4></div>
+        <div class="table_heading__column" id="updated"><h4 class="updated">UPDATED</h4></div>
+      </div>
+
+      <!-- Hard Coded Part -->
+      <div class="backtest_history__row">
+        <div class="backtest_history_column">
+          <div class="table_ellipse"></div>
+        </div>
+        <div class="backtest_history_column" id="strategy"><p class="strategy_paragraph">
+          <span class="symbol_type">SPY </span><span class="call_type">Long Call </span>
+          <span class="detailed_info">30d, .10 delta </span>
+          <span class="capital_or_allocation__info">$25K; 10% of allocation</span>
+        </p></div>
+        <div class="backtest_history_column" id="roc">
+          <p class="roc_paragraph">
+            <span class="roc_percentage">-104.7%</span>
+            <span class="roc_unknown">3Y</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="pseudo_footer">
+    <div class="new_backtest d-flex align-content-center justify-content-end" >
+      <div class="new_backtest__btn_part">
+        <h4 class="new_backtest__title text-center">
+          <a href="">New Backtest</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
